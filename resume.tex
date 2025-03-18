@@ -1,0 +1,60 @@
+% filepath: /Users/msabertalaat/go/src/resume/resume.tex
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+\usepackage[sfdefault]{roboto}
+\usepackage{xcolor}
+
+% Custom section formatting
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{12pt}{8pt}
+
+% Custom commands
+\newcommand{\entry}[4]{
+    {\bf #1} \hfill {#2}\\
+    {\em #3} \hfill {\em #4}\\
+}
+
+\begin{document}
+
+\begin{center}
+    {\Huge\bf Your Name}\\[5pt]
+    \href{mailto:your.email@example.com}{\faEnvelope\ your.email@example.com} $|$
+    \href{tel:+1234567890}{\faPhone\ +1 234 567 890} $|$
+    \href{https://linkedin.com/in/yourprofile}{\faLinkedin\ LinkedIn} $|$
+    \href{https://github.com/yourusername}{\faGithub\ GitHub}
+\end{center}
+
+\section{Education}
+\entry{University Name}{City, Country}
+{Degree - Major}{Year - Year}
+\begin{itemize}
+    \item GPA: X.XX/4.00
+    \item Relevant Coursework: Course 1, Course 2, Course 3
+\end{itemize}
+
+\section{Experience}
+\entry{Company Name}{City, Country}
+{Position Title}{Month Year - Month Year}
+\begin{itemize}
+    \item Achievement/responsibility 1
+    \item Achievement/responsibility 2
+\end{itemize}
+
+\section{Skills}
+\textbf{Programming Languages:} Language 1, Language 2, Language 3\\
+\textbf{Technologies:} Tech 1, Tech 2, Tech 3\\
+\textbf{Tools:} Tool 1, Tool 2, Tool 3
+
+\section{Projects}
+\entry{Project Name}{Technology Stack}
+{Brief description}{Month Year}
+\begin{itemize}
+    \item Key achievement/feature 1
+    \item Key achievement/feature 2
+\end{itemize}
+
+\end{document}
